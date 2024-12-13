@@ -30,8 +30,6 @@ body {
 
 
 .custom-card-style{
-  width: 30rem;
-  max-height: 30rem;
   background-color: var(--card-background-color);
   border-radius: 12px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
@@ -50,6 +48,11 @@ body {
   color: var(--content-text-color);
 }
 
+img{
+  width: 80px;
+  height: 80px;
+}
+
 .credits {
   color: #777;
   position: fixed;
@@ -62,4 +65,17 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+
+@media all and (width >= 768px){
+  .custom-card-style{
+    width: 30rem;
+  }
+}
+
+@media all and (width <= 768px){
+  .custom-card-style{
+    width: 20rem;
+  }
 }
